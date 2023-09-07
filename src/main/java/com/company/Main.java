@@ -27,17 +27,12 @@ public class Main {
 
     JexlContext jexlContext = new MapContext();
 
-    JexlScript alpha = jexl.createScript("2+2");
-    Object x = alpha.execute(jexlContext);
-
-    System.out.println(x);
-
     jexlContext.set("pi", 3.14);
     jexlContext.set("r", 10);
 
-    JexlScript beta = jexl.createScript("pi*r*r");
-    Object y = beta.execute(jexlContext);
+    JexlScript expression = jexl.createScript("pi*r*r");
+    Object result = expression.execute(jexlContext);
 
-    System.out.println(y);
+    System.out.println("result:" + result);
   }
 }
