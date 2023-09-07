@@ -28,6 +28,7 @@ public class StreamTest {
       .loops(false)
       .sideEffectGlobal(false)
       .sideEffect(false);
+
     // Restricted permissions to a safe set but with URI allowed
     JexlPermissions permissions = new ClassPermissions(java.net.URI.class);
     // Create the engine

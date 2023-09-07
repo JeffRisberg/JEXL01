@@ -9,7 +9,7 @@ version = '0.1.0'
 ext {
   slf4jVersion = '1.7.30'
   projectLombokVersion = '1.16.20'
-
+  junitVersion = '4.13.2'
 }
 
 dependencies {
@@ -17,7 +17,7 @@ dependencies {
   compile "org.slf4j:slf4j-api:$slf4jVersion"
   runtime "org.slf4j:slf4j-simple:$slf4jVersion"
   compile "org.projectlombok:lombok:$projectLombokVersion"
-
   compile 'org.apache.commons:commons-jexl3:3.3'
-  testCompile "junit:junit:$junitVersion"
+
+  compile "junit:junit:$junitVersion"
 }
